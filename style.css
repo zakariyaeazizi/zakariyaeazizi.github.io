@@ -1,0 +1,563 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: black;
+}
+
+html{
+    font-family: sans-serif;
+
+}
+main{
+    background-color: black;
+    height: 90vh;
+}
+header{
+    background-color: black;
+}
+
+.nav-link{
+    color: white !important;
+    margin-right: 20px;   
+}
+
+.nav-link:hover{
+    transition: all 0.8s;
+    border: 1px solid #ffd924 !important;
+}
+.navbar-toggler-icon{
+    background-color: white !important;
+}
+.banner{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+.img-banner{
+    width: 400px;
+}
+.side1{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.hey{
+    color: white;
+    position: relative;
+}
+.fullstack{
+    color: white;
+}
+.hey::after{
+    content: "";
+    background-color: #ffd924;
+    position: absolute;
+    width: 305px;
+    height: 2px;
+    top: 50%;
+    transform: translateX(3%);
+}
+
+.side1 h1{
+    font-size: 4rem;
+    color: white;
+
+}
+.zakariyae{
+    color: #ffd924;
+
+}
+.side1 h2{
+    font-size: 4rem;
+    font-size: 2.6rem;
+    font-weight: 300;
+
+}
+.side1 p{
+    letter-spacing: 0.3rem;
+    font-size: 1.3rem;
+}
+.social_icons{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.icons{
+    text-decoration: none;
+    background-color: #ffc107;
+    padding: 5px;
+    border-radius: 50%;
+}
+.side2{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.cont_aboutme{
+    padding-bottom: 20px;
+    display: flex; 
+    flex: row;
+    gap: 5%;
+}
+.aboutme h1{
+    text-align: center;
+    color: #ffc107;
+    font-weight: 700;
+}
+.aboutme_img{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+.aboutme_img img{
+    width: 100%;
+}
+.aboutme-title{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.cont_aboutme h1{
+    font-weight: 700;
+    margin-bottom: 16px;
+    color: #ffc107;
+}
+
+.cont_aboutme p{
+    color: white;
+    line-height: 2rem;
+}
+.keywords{
+    color:#ffd924;
+}
+.skills h2{
+    color: #ffc107;
+    font-size: 1.6rem;
+}
+.skills_icons{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.skill_icon{
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+}
+.skill_icon i{
+    color: #ffc107;
+    font-size: 30px;
+    padding-right:3px ;
+}
+.icon_title{
+    color: white;
+    font-size: 1rem;
+    padding-left: 5px;
+}
+
+marquee{
+    background-color:#ffd924;
+    display: block;
+    gap: 20%;
+
+}
+marquee img{
+    gap: 10%;
+    background-color: #ffd924;
+}
+.logos{
+    background-color: #ffd924;
+    padding: 5px 0px;
+    margin-bottom: 20px;
+    
+}
+.Projects h1{
+    text-align: center;
+    font-weight: 700;
+    color: #ffc107;
+    padding-bottom: 30px;
+}
+.cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    width: 100%;
+    
+}
+.cards_section{
+    margin-top: 20px;
+}
+.cardd{
+    width: 350px;
+    height: 400px;
+    position: relative;
+    cursor: pointer;
+    background-color: white;
+    border: 3px solid #ffd924;
+    border-radius: 30px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+.card_img{
+    width: 100%;
+    height: 50%;
+   
+    
+}
+.title_parag{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.title_parag h2{
+    padding-top: 12px;
+    padding-left: 12px;
+    font-size: 1.4rem;
+    color: black;
+    font-weight: 700;
+    background-color: white;
+    text-align: center;
+}
+.title_parag p{
+    padding-top: 5px;
+    padding-left: 12px;
+    color: #212529;
+    background-color: white;
+    width: 80%;
+    text-align: center;
+}
+.btn_overlay i{
+    background-color: #000000;
+    color: white;
+    padding: 20px;
+    border-radius: 50%;
+}
+.btn_overlay{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fcd309e1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.6s;
+    transform: translateY(100%);
+}
+.cardd:hover .btn_overlay{
+    transform: translateY(0%);
+    transition: 1s;
+
+}
+.tools{
+    position: absolute;
+    bottom: 5px;
+    display: flex;
+    background: transparent;
+        gap: 3px;
+}
+.tools img{
+    margin-left: 12px;
+    background-color: #ffd924;
+    padding: 4px;
+    border-radius: 50%;
+}
+.cards_title{
+    display: flex;
+    margin-bottom: 30px;
+    margin-top: 50px;
+
+}
+.cards_title h1{
+    color: #ffc107;
+    font-weight: 700;
+}
+.contact_title h1{
+    margin-top: 40px;
+    text-align: center;
+    color: #ffc107;
+    font-weight: 700;
+}
+.form-label{
+    color: white;
+}
+.btn-primary{
+    background-color: #ffc107 !important;
+    color: white;
+}
+.contact_sec{
+    padding-top: 30px;
+}
+form{
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1198px) {
+    .side1 h1 {
+        font-size: 3rem;
+    }
+    .side1 h2 {
+       
+        font-size: 1.8rem;
+      
+    }
+
+  }
+  @media screen and (max-width: 990px) {
+    .logos{
+        margin-top: 50px;
+        margin-bottom: 0;
+    }
+
+    marquee img{
+        width: 30px;
+    }
+    .side1 h1 {
+        font-size: 2.8rem;
+    }
+    .side1 h2 {
+       
+        font-size: 1.8rem;
+      
+    }
+    
+    .side1 p {
+    letter-spacing: 0.3rem;
+    font-size: 1.1rem;
+    }
+
+    .cont_aboutme h1 {
+
+    font-size: 2rem;
+   }
+    
+  }
+  @media screen and (max-width: 991px) {
+    .title_parag p {
+        font-size: 0.8rem;
+    }
+
+    .hey::after {
+       
+        width: 255px;
+        
+    }
+    .cont_aboutme p{
+        font-size: 0.9rem;
+        line-height: 1.3rem;
+    }
+    
+    
+  }
+  @media screen and (max-width: 767px) {
+    .image_mail{
+        display: none;
+    }
+    .d-flex {
+        display: flex!important;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+    .cards{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        justify-content: center;
+        gap: 10px;
+        
+    }
+
+    .cardd{
+        width: 245px;
+        margin-top: 20px;
+    }
+    .cards_title h1 {
+        width: 40%;
+    }
+    .banner{
+        height:auto;
+        padding: 30%;
+
+    }
+    .logos{
+        margin-top: 20px;
+    }
+    .banner{
+        display: flex;
+        flex-direction: column;
+        padding-top: 20px;
+        justify-content: start;
+        
+    }
+    .side1{
+        width: 100%;
+    }
+    .side2{
+        padding-top: 20px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    
+    .side1 h2 {
+        font-size: 3rem;
+    }
+    .side1 h1 {
+        font-size: 4rem;
+    }
+    .img-banner{
+        width: 366px;
+        height: 100%;
+    }
+
+
+    .cont_aboutme{
+        display: flex;
+        flex-direction: column;
+        margin-top: 5%;
+    }
+    .aboutme_img{
+        width: 100%;
+    }
+    .aboutme_img img{
+        display: none;
+    }
+    .aboutme-title{
+        width: 100%;
+    }
+    @media screen and (max-width: 570px) {
+        .image_mail{
+            display: none;
+        }
+        .d-flex {
+            display: flex!important;
+            flex-wrap: wrap;
+            flex-direction: column-reverse;
+        }
+        .cards{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr); 
+            justify-content: center;
+            align-items: center;
+            justify-items: center;
+            
+        }
+    
+        .cardd{
+            width: 245px;
+            margin-top: 20px;
+        }
+        .cont_aboutme{
+            padding-right: 20px !important;
+            padding-left: 20px !important;
+        }
+
+    }
+
+    
+  @media screen and (max-width: 511px) {
+
+    .hey::after{
+        
+        width: 246px;
+        
+    }
+    .side1 h2 {
+        font-size: 1.6rem;
+    }
+    .side1 h1 {
+        font-size: 2.6rem;
+        }
+    .side1 p{
+        font-size: 1rem;
+
+    }
+    .img-banner {
+        width: 338px;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .banner{
+        height:auto;
+        padding: 20px;
+
+
+    }
+    .skill_icon i {
+       
+        font-size: 20px;
+    
+
+        }
+    .icon_title {
+            
+            font-size: 0.8rem;
+        }
+
+
+    }
+@media screen and (max-width: 990px) {
+        .cardd {
+            height:358px;
+        }
+    
+    
+    }
+
+}
+    
+
+
